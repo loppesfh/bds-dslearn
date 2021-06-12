@@ -17,3 +17,7 @@ insert into tb_course (name, img_uri, img_gray_uri) values ('Bootcamp HTML', 'ht
 
 insert into tb_offer (edition, start_moment, end_moment, course_id) values ('1.0', TIMESTAMP WITH TIME ZONE '2021-07-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-07-31T03:00:00Z', 1);
 insert into tb_offer (edition, start_moment, end_moment, course_id) values ('2.0', TIMESTAMP WITH TIME ZONE '2021-08-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-08-30T03:00:00Z', 1);
+
+insert into tb_resource (title, description, position, img_uri, type, offer_id) values ('Trilha HTML', 'Trilha principal do curso', 1, 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 1);
+insert into tb_resource (title, description, position, img_uri, type, offer_id) values ('Forum', 'Tire suas dúvidas', 2, 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 2, 1);
+insert into tb_resource (title, description, position, img_uri, type, offer_id) values ('Lives', 'Lives exclusiva para a turma', 3, 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 0, 1);
