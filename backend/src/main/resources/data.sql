@@ -14,3 +14,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
 insert into tb_course (name, img_uri, img_gray_uri) values ('Bootcamp HTML', 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 'https://cdn1.vectorstock.com/i/1000x1000/44/95/online-course-glyph-icon-e-learning-and-education-vector-20224495.jpg');
+
+insert into tb_offer (edition, start_moment, end_moment, course_id) values ('1.0', TIMESTAMP WITH TIME ZONE '2021-07-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-07-31T03:00:00Z', 1);
+insert into tb_offer (edition, start_moment, end_moment, course_id) values ('2.0', TIMESTAMP WITH TIME ZONE '2021-08-01T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-08-30T03:00:00Z', 1);
