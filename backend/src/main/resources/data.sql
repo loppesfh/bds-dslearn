@@ -24,4 +24,7 @@ insert into tb_resource (title, description, position, img_uri, type, offer_id) 
 
 insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 1', 'Neste capítulo vms começar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, null);
 insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 2', 'Neste capítulo vms continuar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 1);
-insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 3', 'Neste capítulo vms finalizar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 2); 
+insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 3', 'Neste capítulo vms finalizar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 2);
+
+insert into tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (1, 1, TIMESTAMP WITH TIME ZONE '2021-07-01T13:00:00Z', null, true, false);
+insert into tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (2, 1, TIMESTAMP WITH TIME ZONE '2021-07-01T13:00:00Z', null, true, false);
