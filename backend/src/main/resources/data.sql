@@ -21,3 +21,7 @@ insert into tb_offer (edition, start_moment, end_moment, course_id) values ('2.0
 insert into tb_resource (title, description, position, img_uri, type, offer_id) values ('Trilha HTML', 'Trilha principal do curso', 1, 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 1);
 insert into tb_resource (title, description, position, img_uri, type, offer_id) values ('Forum', 'Tire suas dúvidas', 2, 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 2, 1);
 insert into tb_resource (title, description, position, img_uri, type, offer_id) values ('Lives', 'Lives exclusiva para a turma', 3, 'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 0, 1);
+
+insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 1', 'Neste capítulo vms começar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, null);
+insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 2', 'Neste capítulo vms continuar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 1);
+insert into tb_section (title, description, position, img_uri, resource_id, prerequisite_id) values ('Capitulo 3', 'Neste capítulo vms finalizar', 1,'https://image.freepik.com/vetores-gratis/desenvolvimento-de-front-end-plano_107173-16796.jpg', 1, 2); 
