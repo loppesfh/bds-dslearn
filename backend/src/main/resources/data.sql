@@ -28,3 +28,20 @@ insert into tb_section (title, description, position, img_uri, resource_id, prer
 
 insert into tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (1, 1, TIMESTAMP WITH TIME ZONE '2021-07-01T13:00:00Z', null, true, false);
 insert into tb_enrollment (user_id, offer_id, enroll_moment, refund_moment, available, only_update) values (2, 1, TIMESTAMP WITH TIME ZONE '2021-07-01T13:00:00Z', null, true, false);
+
+insert into tb_lesson (title, position, section_id) values ('Aula 1 do capitulo 1', 1, 1);
+insert into tb_content (id, text_content, video_uri) values (1, 'Material de apoio abc:', 'https://youtu.be/eD2rEVSQaU8'); 
+
+insert into tb_lesson (title, position, section_id) values ('Aula 2 do capitulo 1', 2, 1);
+insert into tb_content (id, text_content, video_uri) values (2, '', 'https://youtu.be/eD2rEVSQaU8');
+
+insert into tb_lesson (title, position, section_id) values ('Aula 3 do capitulo 1', 3, 1);
+insert into tb_content (id, text_content, video_uri) values (3, '', 'https://youtu.be/eD2rEVSQaU8');
+
+insert into tb_lesson (title, position, section_id) values ('Tarefa do capitulo 1', 4, 1);
+insert into tb_task (id, description, question_count, approval_count, weight, due_date) values (4, 'Fazer um trabalho legal', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2021-07-25T03:00:00Z');
+
+insert into tb_lessons_done (lesson_id, user_id, offer_id) values (1, 1, 1);
+insert into tb_lessons_done (lesson_id, user_id, offer_id) values (2, 1, 1);
+
+ 
