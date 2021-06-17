@@ -11,7 +11,7 @@ import com.devsuperior.dslearnbds.dto.UserDTO;
 import com.devsuperior.dslearnbds.services.UserService;
 
 @RestController
-@RequestMapping(value = "users")
+@RequestMapping(value = "/users")
 public class UserResource {
 	
 	@Autowired

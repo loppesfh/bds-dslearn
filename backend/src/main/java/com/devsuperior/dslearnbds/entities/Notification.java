@@ -24,7 +24,7 @@ public class Notification implements Serializable{
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant moment;
-	private boolean read = false;
+	private boolean read;
 	private String route;
 	
 	@ManyToOne
@@ -68,7 +68,8 @@ public class Notification implements Serializable{
 		this.moment = moment;
 	}
 
-	public boolean getRead() {
+	
+	public boolean isRead() {
 		return read;
 	}
 
